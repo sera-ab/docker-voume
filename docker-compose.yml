@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  sera:
+    image: seraaboagye/apache6:latest
+    volumes:
+      - ./my-container-files:/var/www/html:rw
+    ports:
+      - "9090:80"
+
